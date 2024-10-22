@@ -1,0 +1,19 @@
+#This program ask you to create name and password
+
+print('Enter your name: ')
+name = input()
+print('Enter a password: ')
+password = input()
+
+while True:
+    print('Type your name:')
+    name1 = input()
+    if name != name1:
+        continue
+    print(f'Hello {name}')
+    print('Type your password:')
+    password1 = input()
+    if password == password1:
+        print('Correct password')
+        break
+print(f'Thank you and have a nice day {name}.')
