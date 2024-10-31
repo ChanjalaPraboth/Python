@@ -1,0 +1,14 @@
+#fibonacci sequence
+
+firstTerm=0
+secondTerm=1
+
+num=int(input('How many terms of fibonacci sequence do you require:'))
+print('The fibonacci sequence is:')
+print(firstTerm,secondTerm,end=" ")
+
+for i in range(2,num):
+    curTerm=firstTerm+secondTerm
+    print(curTerm,end=" ")
+    firstTerm=secondTerm
+    secondTerm=curTerm
